@@ -1,0 +1,409 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201126.194851.17285.0.001.json",
+    "dumpEventTime": "2020-11-26T19:48:51Z",
+    "dumpEventTimeStamp": "1606430931821",
+    "processId": 17285,
+    "threadId": null,
+    "cwd": "/home/kleber/Área de Trabalho/Desafio-Fundamentos-React-Native",
+    "commandLine": [
+      "/usr/local/bin/node",
+      "/home/kleber/Área de Trabalho/Desafio-Fundamentos-React-Native/node_modules/jest-worker/build/workers/processChild.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-52-generic",
+    "osVersion": "#57~18.04.1-Ubuntu SMP Thu Oct 15 14:04:49 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 18118400,
+        "nice": 49000,
+        "sys": 2541300,
+        "idle": 71379200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 17864000,
+        "nice": 50900,
+        "sys": 2666900,
+        "idle": 71407100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 17650900,
+        "nice": 50000,
+        "sys": 2942500,
+        "idle": 71321100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-2120 CPU @ 3.30GHz",
+        "speed": 3292,
+        "user": 18180200,
+        "nice": 49300,
+        "sys": 2559700,
+        "idle": 71226000,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "192.168.0.14",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "2804:14c:bf2f:8444:9c4d:a383:a8d2:a4a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "enp2s0",
+        "internal": false,
+        "mac": "8c:89:a5:b7:31:ee",
+        "address": "fe80::9742:3c2:8965:3a07",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      }
+    ],
+    "host": "kleber-MS-7788"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b46955",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a09c8f",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7d71e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7da99",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d2a1f5",
+      "symbol": " [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d2a886",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d37105",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d37fb5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d3aa6c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d0163b",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x000000000104300e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000013c5b79",
+      "symbol": " [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2166472704,
+    "totalCommittedMemory": 2166054752,
+    "usedMemory": 2014012144,
+    "availableMemory": 64772704,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759296,
+        "used": 474472,
+        "available": 16284824
+      },
+      "old_space": {
+        "memorySize": 1605246976,
+        "committedMemory": 1605133096,
+        "capacity": 1488112152,
+        "used": 1487726160,
+        "available": 385992
+      },
+      "code_space": {
+        "memorySize": 1740800,
+        "committedMemory": 1666080,
+        "capacity": 1411424,
+        "used": 1411424,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2625536,
+        "committedMemory": 2625240,
+        "capacity": 1456960,
+        "used": 1456960,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 522993664,
+        "committedMemory": 522993664,
+        "capacity": 522907536,
+        "used": 522907536,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1368.17,
+    "kernelCpuSeconds": 11.8323,
+    "cpuConsumptionPercent": 106.812,
+    "maxRss": 2595770368,
+    "pageFaults": {
+      "IORequired": 148,
+      "IONotRequired": 1041541
+    },
+    "fsActivity": {
+      "reads": 32568,
+      "writes": 14968
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 1158.25,
+    "kernelCpuSeconds": 7.77932,
+    "cpuConsumptionPercent": 90.2501,
+    "fsActivity": {
+      "reads": 28368,
+      "writes": 14968
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "SPACESHIP_ROOT": "/home/kleber/.oh-my-zsh/custom/themes/spaceship-prompt",
+    "USER": "kleber",
+    "LANGUAGE": "pt_BR:pt:en",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"pt-br\",\"availableLanguages\":{},\"_languagePackSupport\":true}",
+    "XDG_SEAT": "seat0",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "CI": "true",
+    "XDG_SESSION_TYPE": "x11",
+    "SSH_AGENT_PID": "1500",
+    "SHLVL": "0",
+    "VSCODE_LOG_STACK": "false",
+    "HOME": "/home/kleber",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "OLDPWD": "/home/kleber",
+    "LESS": "-R",
+    "DESKTOP_SESSION": "xfce",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-0a3e7622-1.51.1-main.sock",
+    "ZSH": "/home/kleber/.oh-my-zsh",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "GTK_MODULES": "gail:atk-bridge",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "VSCODE_LOGS": "/home/kleber/.config/Code/logs/20201126T192707",
+    "PAGER": "less",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "16833",
+    "PIPE_LOGGING": "true",
+    "MANDATORY_PATH": "/usr/share/gconf/xfce.mandatory.path",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "LOGNAME": "kleber",
+    "_": "/usr/share/code/code",
+    "DEFAULTS_PATH": "/usr/share/gconf/xfce.default.path",
+    "XDG_SESSION_ID": "c1",
+    "CLUTTER_BACKEND": "x11",
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kleber/Android/Sdk/emulator:/home/kleber/Android/Sdk/tools:/home/kleber/Android/Sdk/tools/bin:/home/kleber/Android/Sdk/platform-tools:/home/kleber/android-studio/bin",
+    "GDM_LANG": "pt_BR",
+    "SESSION_MANAGER": "local/kleber-MS-7788:@/tmp/.ICE-unix/1410,unix/kleber-MS-7788:/tmp/.ICE-unix/1410",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_MENU_PREFIX": "xfce-",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/kleber/.config/Code/CachedData/e5a624b788d92b8d34d1392e4c4d9789406efe8f",
+    "DISPLAY": ":0.0",
+    "LANG": "pt_BR.UTF-8",
+    "XDG_CURRENT_DESKTOP": "XFCE",
+    "XDG_SESSION_DESKTOP": "xfce",
+    "XAUTHORITY": "/home/kleber/.Xauthority",
+    "LS_COLORS": "",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/kleber",
+    "SSH_AUTH_SOCK": "/tmp/ssh-JTDCG0oVBidy/agent.1410",
+    "GSETTINGS_SCHEMA_DIR": "/home/kleber/data",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "XFCE",
+    "SHELL": "/bin/zsh",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "QT_ACCESSIBILITY": "1",
+    "GDMSESSION": "xfce",
+    "VERBOSE_LOGGING": "true",
+    "CRASH_REPORTER_START_OPTIONS": "{\"companyName\":\"Microsoft\",\"productName\":\"VSCode\",\"submitURL\":\"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=9c8c4a57-e5e5-4469-9b4d-671d963d1815&iid=9c8c4a57-e5e5-4469-9b4d-671d963d1815&sid=9c8c4a57-e5e5-4469-9b4d-671d963d1815\",\"uploadToServer\":true}",
+    "XDG_VTNR": "7",
+    "SPACESHIP_VERSION": "3.11.2",
+    "PWD": "/home/kleber/Área de Trabalho/Desafio-Fundamentos-React-Native",
+    "JAVA_HOME": "/usr/lib/jvm/java-8-openjdk-amd64/",
+    "XDG_DATA_DIRS": "/usr/share/xfce4:/home/kleber/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/usr/share",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-xfce:/etc/xdg:/etc/xdg",
+    "ANDROID_HOME": "/home/kleber/Android/Sdk",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "BREAKPAD_DUMP_LOCATION": "/home/kleber/.config/Code/exthost Crash Reports",
+    "VSCODE_PID": "16833",
+    "VSCODE_IPC_HOOK_EXTHOST": "/run/user/1000/vscode-ipc-6a56ba94-eb50-47da-9de4-d6a7ad303044.sock",
+    "NODE_ENV": "test",
+    "JEST_WORKER_ID": "3"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 31125,
+      "hard": 31125
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
